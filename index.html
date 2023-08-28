@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MObile Phone</title>
+    <!-- daisy UI and Tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+
 </head>
 <body>
     
-    
+<main>
+    <section class=" max-w-screen-xl mx-auto py-10">
+        <!-- search  -->
+        <div class="text-center">
+            <h1 class="text-3xl text-black font-semibold text-center">Search your phone</h1>
+            <input class="py-3 px-5 rounded-md bg-gray-100 w-96 my-10 border border-gray-200 inline" type="text" name="" id="searchinput" placeholder="Search Your Phone">
+            <button onclick="searchHandler()" class="px-6 py-3 rounded-md bg-blue-600 text-xl text-white font-medium inline">Search</button>
+
+        </div>
+
+        <!-- loading spinner -->
+        <div id="loading-spinner" class="text-center my-40 hidden">
+            <span class="loading loading-dots loading-lg"></span>
+        </div>
+
+        <div id="card-container" class="grid grid-cols-3 gap-x-8 gap-y-16">
+
+           
+        </div>
+
+        <div id="showMore" class="text-center mt-10 hidden">
+            <button class="px-3 py-2 rounded-md bg-blue-500 text-white text-xl text-center">Show More</button>
+        </div>
+    </section>
+</main>
     <script src="js/mobile.js"></script>
 </body>
 </html>
